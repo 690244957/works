@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>谢冠岚作品集</title>
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<style type="text/css" media="screen">
+		*{margin:0;
+			padding:0;
+			list-style:none;}
+		body{
+			background: url('bg.jpg')
+		}
+		div{
+			margin:0 auto;
+			padding:20px;
+			text-align:center;
+			margin-top:100px;
+
+		}
+		a{
+			font-size:20px;
+			color:black;
+		}
+		a:hover{
+			color:yellow;
+		}
+		li{margin-top:10px;
+			}
+
+		
+	</style>
+	
+</head>
+<body>
+	<div class="content">
+		<h1>谢冠岚作品集</h1>
+		<ul class="work-lists">
+			<li><i></i><a href="https://690244957.github.io/" title="">个人博客(jekyll网站)</a></li>
+			<li><i></i><a href="https://690244957.github.io/Retro-Snaker/" title="">贪吃蛇项目(原生JS项目)</a></li>
+			<li><i></i><a href="https://690244957.github.io/jingdong/" title="">京东首页(html+css静态页面)</a></li>
+			<li><i></i><a href="https://690244957.github.io/baidu/index.html" title="">百度首页(html+css静态页面)</a></li>
+			<li><i></i><a href="https://690244957.github.io/shanghe/" title="">尚合首页(html+css静态页面)</a></li>
+			<li><i></i><a href="https://690244957.github.io/APP_team/#g=1&p=图例" title="">智能笔记(Axure产品设计)</a></li>
+			<li><i></i><a href="https://690244957.github.io/lingshidian/index.html" title="">零食店页面(bookstrap页面)</a></li>
+			
+		</ul>
+		
+	</div>
+	<script>
+		is = document.getElementsByTagName('i');
+
+		lis = document.getElementsByTagName('li');
+
+		for(var i = 0; i < lis.length; i++){
+			lis[i].setAttribute('index',i);
+			lis[i].onmouseenter = function(){
+				index = this.getAttribute('index');
+				is[index].className = "iconfont icon-jiantou";
+			}
+			lis[i].onmouseleave = function(){
+				index = this.getAttribute('index');
+				is[index].className = "";
+			}
+		}
+
+	</script>
+</body>
+</html>
